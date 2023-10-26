@@ -1,5 +1,5 @@
 <template>
-    <div :class="componentType == 'card' ? 'h-64' : 'h-80'" class="rounded-md overflow-hidden bg-cover bg-center"
+    <div :class="componentType == 'card' ? 'h-64' : 'h-80'" class="w-full rounded-md overflow-hidden bg-cover bg-center"
         :style="`background-image: url('` + filesPath + props.collectionId + '/' + props.id + '/' + props.image + `')`">
         <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
             <div class="px-10 max-w-xl">

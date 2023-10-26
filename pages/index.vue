@@ -2,30 +2,31 @@
     <main class="my-2">
 
         <Head>
-            <Title>Maxazon - Next level shopping experience</Title>
+            <Title>Mayzii - Next level shopping experience</Title>
         </Head>
 
         <div class="container mx-auto px-6">
             <Hero />
 
+
             <div class="mt-16">
                 <h3 class="text-gray-800 text-2xl font-medium" v-if="showFeaturedCategoriesOnly">Featured Categories</h3>
                 <h3 class="text-gray-800 text-2xl font-medium" v-else>All Categories</h3>
-                <div class="md:flex mt-8 md:-mx-4">
-                    <CategoryCard class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2 mb-4"
-                        v-for="category in categoriesData" :image="category.image" :title="category.title"
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6 mt-8">
+                    <CategoryCard
+                        v-for="category in categoriesData.slice(0,4)" :image="category.image" :title="category.title"
                         :description="category.description" :linkText="category.buttonText" :id="category.id"
                         :collectionId="category.collectionId" />
                 </div>
-                <button @click="showFeaturedCategoriesOnly = !showFeaturedCategoriesOnly"
+                <!-- <button @click="showFeaturedCategoriesOnly = !showFeaturedCategoriesOnly"
                     class="flex items-center gap-2 border px-4 py-2 rounded-lg transition hover:bg-gray-800 hover:text-white">
-                    <span v-if="showFeaturedCategoriesOnly">All Categories</span>
+                    <span v-if="showFeaturedCategoriesOnly">Show All Categories</span>
                     <span v-else>Featured Categories</span>
                     <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg>
-                </button>
+                </button> -->
             </div>
 
 

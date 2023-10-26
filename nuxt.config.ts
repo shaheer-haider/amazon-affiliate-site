@@ -1,10 +1,10 @@
-import { RuntimeConfig } from 'nuxt/schema';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  runtimeConfig:{
-    public:{
-      API: "https://amazon-commerce.pockethost.io/api/collections/",
-      FILES: "https://amazon-commerce.pockethost.io/api/files/"
+  runtimeConfig: {
+    public: {
+      API: "http://127.0.0.1:8090/api/collections/",
+      FILES: "http://127.0.0.1:8090/api/files/",
+      BLOGS_COLLECTION_ID: "8htorli7ky4dmf7"
     }
   },
   app: {
@@ -25,6 +25,6 @@ export default defineNuxtConfig({
     configPath: '~/tailwind.config.js'
   },
   meta: {
-    title: "Maxazon"
+    title: "Mayzii"
   }
 })

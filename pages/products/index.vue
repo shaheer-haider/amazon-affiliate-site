@@ -2,7 +2,7 @@
     <main class="container mx-auto px-6">
 
         <Head>
-            <Title>Maxazon - High Quality Deals</Title>
+            <Title>Mayzii - High Quality Deals</Title>
         </Head>
         <div class="mt-8">
             <ProductsHero

@@ -1,7 +1,7 @@
 <template>
     <main class="container mx-auto px-6">
         <Head>
-            <Title>Maxazon - About</Title>
+            <Title>Mayzii - About</Title>
         </Head>
 
         <div class="mt-8">
