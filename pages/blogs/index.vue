@@ -99,8 +99,8 @@ const blogsData = ref([]);
 const page = ref(1);
 
 let perApiCallLimit = 10;
-function fetchBlogs() {
-  axios
+async function fetchBlogs() {
+  await axios
     .get(
       apiBaseUrl +
         "blogs/records?filter=(draft=false)&sort=-date&perPage=" +
@@ -121,5 +121,5 @@ function fetchMoreBlogs() {
   fetchBlogs();
 }
 
-fetchBlogs();
+await fetchBlogs();
 </script>

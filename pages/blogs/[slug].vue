@@ -55,7 +55,7 @@ const blogId = useRoute().query.id;
 
 const blog = ref({});
 if (blogId) {
-  axios.get(apiBaseUrl + "blogs/records/" + blogId).then((res) => {
+  await axios.get(apiBaseUrl + "blogs/records/" + blogId).then((res) => {
     blog.value = res.data;
   });
 }

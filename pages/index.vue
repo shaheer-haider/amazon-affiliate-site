@@ -67,12 +67,12 @@ const categoriesData = computed(() => {
     })
 })
 
-axios.get(apiBaseUrl + "categories/records?filter=(disabled=false)").then((res) => {
+await axios.get(apiBaseUrl + "categories/records?filter=(disabled=false)").then((res) => {
     allCategoriesData.value = res.data.items
 })
 
 const featuredProductsData = ref([])
-axios.get(apiBaseUrl + "products/records?filter=(disabled=false)").then((res) => {
+await axios.get(apiBaseUrl + "products/records?filter=(disabled=false)").then((res) => {
     featuredProductsData.value = res.data.items.map(val => {
         val.badges = val.badges.split(",")
         return val

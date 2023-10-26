@@ -34,11 +34,11 @@ if (category) {
     productApiUrl += "?filter=(categories.title?=%27" + category + "%27)"
 }
 if (categoryId) {
-    axios.get(apiBaseUrl + "categories/records/" + categoryId).then((res) => {
+    await axios.get(apiBaseUrl + "categories/records/" + categoryId).then((res) => {
         imageUrl.value = filesPath + res.data.collectionId + '/' + res.data.id + '/' + res.data?.image
     })
 }
-axios.get(productApiUrl).then((res) => {
+await axios.get(productApiUrl).then((res) => {
     featuredProductsData.value = res.data.items.map(val => {
         val.badges = val.badges.split(",")
         return val
