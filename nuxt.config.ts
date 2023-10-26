@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      API: "http://127.0.0.1:8090/api/collections/",
-      FILES: "http://127.0.0.1:8090/api/files/",
-      BLOGS_COLLECTION_ID: "8htorli7ky4dmf7"
+      API: process.env.API,
+      FILES: process.env.FILES,
+      BLOGS_COLLECTION_ID: process.env.BLOGS_COLLECTION_ID
     }
   },
   app: {
