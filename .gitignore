@@ -32,3 +32,5 @@ logs
 pocketbase/pb_data/storage/*
 !pocketbase/pb_data/storage
 pocketbase/pb_data/*.db
+pocketbase/pb_data/*.db-wal
+pocketbase/pb_data/*.db-shm
