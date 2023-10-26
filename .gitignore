@@ -28,3 +28,7 @@ logs
 */!.env.example
 
 .env
+
+pocketbase/pb_data/storage/*
+!pocketbase/pb_data/storage
+pocketbase/pb_data/*.db
