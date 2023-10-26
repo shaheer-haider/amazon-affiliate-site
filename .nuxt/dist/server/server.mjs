@@ -1,1 +1,0 @@
-export { default } from "file:///home/shaheer/Desktop/amazon-commerce/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
